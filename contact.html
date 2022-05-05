@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="img/tds-logo-double.svg" sizes="32x32" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="page-header">
+        <a href="index.html"><img src="img/tds-site-identity-logo.svg" alt="The Digital Solver Logo"
+                class="page-header__logo page-header__item"></a>
+        <nav class="navigation-list page-header__item" id="main-menu">
+            <ul role="menubar">
+                <li role="presentation"><a href="index.html" role="menuitem">Home</a></li>
+                <li role="presentation"><a href="about.html" role="menuitem">About</a></li>
+                <li role="presentation"><a href="contact.html" role="menuitem">Contact</a></li>
+                <li role="presentation"><a href="work.html" role="menuitem">Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <section class="contact-section">
+            <div class="contact-info-container">
+                <h1>Contact</h1>
+                <p>This is the Contact page.</p>
+                <p><a href="mailto:example@example.com">This is a linked email.</a></p>
+                <p><a href="tel:+331234689">This is a linked phone number.</a></p>
+                <p><a href="mailto:example@example.com">Get in touch!</a></p>
+            </div>
+            <form action="#" method="post">
+
+                <div class="form-item">
+                    <label for="first-name">First Name*</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="John" required><br>
+                </div>
+
+                <div class="form-item">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Smith"><br>
+                </div>
+
+                <div class="form-item">
+                    <label for="question">Your Question*</label>
+                    <textarea type="text" id="question" name="question" placeholder="e.g. Are you available for hire?"
+                        required maxlength="240"></textarea><br>
+                </div>
+
+                <div class="form-item">
+                    <label for="email">Your Email*</label>
+                    <input type="email" id="email" name="email" placeholder="example@abc.com" required><br>
+                </div>
+
+                <div class="form-item">
+                    <label for="submit">Submit</label>
+                    <input type="submit" id="submit" value="submit">
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="page-footer">
+        <p>Find me on:</p>
+        <ul class="social-media">
+            <li><img src="img/linkedin.svg" alt="linkedin-logo"></li>
+            <li><img src="img/dribbble.svg" alt="dribbble-logo"></li>
+            <li><img src="img/github.svg" alt="github-logo"></li>
+            <li><img src="img/stack-overflow.svg" alt="stack-overflow-logo"></li>
+            <li><img src="img/medium.svg" alt="medium-logo"></li>
+        </ul>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>
