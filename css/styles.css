@@ -382,6 +382,10 @@ button:focus,
   text-align: center;
 }
 
+.about-page__download a:visited{
+  color: var(--text-snow);
+}
+
 .about-page__subheading,
 .berlin-card__heading {
   margin-top: 1.5rem;
