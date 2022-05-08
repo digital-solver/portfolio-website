@@ -123,14 +123,14 @@ h6 {
 p {
   font-size: 1rem;
   font-weight: var(--font-regular);
-  line-height: var(--lh-heading)-1;
+  line-height: calc(var(--lh-heading) - 1rem);
 }
 
 strong,
 b {
   font-size: 1rem;
   font-weight: var(--font-heavy);
-  line-height: var(--lh-heading)-1;
+  line-height: calc(var(--lh-heading) - 1rem);
 }
 
 /* 
@@ -641,5 +641,5 @@ button:focus,
 .contact-section .textarea {
   border-radius: 5px;
   padding: 5px;
-  box-shadow: 0;
+  box-shadow: none;
 }
