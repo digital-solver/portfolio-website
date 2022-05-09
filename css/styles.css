@@ -181,6 +181,9 @@ button:focus,
   cursor: pointer;
   opacity: 1;
 }
+.button:visited {
+  color: var(--text-snow);
+}
 
 /* 
 =====================================

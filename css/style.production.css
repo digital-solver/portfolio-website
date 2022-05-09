@@ -204,6 +204,10 @@ button:focus {
   opacity: 1;
 }
 
+.button:visited {
+  color: #fff9fb;
+}
+
 /* 
 =====================================
 4. PRIMARY NAVIGATION
