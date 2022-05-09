@@ -220,6 +220,10 @@ button:focus,
   margin-left: 15px;
 }
 
+.navigation-list__item--active {
+  text-decoration: underline;
+}
+
 /* 
 =====================================
 5. FOOTER
