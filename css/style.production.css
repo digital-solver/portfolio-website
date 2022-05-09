@@ -384,6 +384,10 @@ button:focus {
   height: 80px;
 }
 
+.project-list__item a {
+  color: #4b77a3;
+}
+
 .project-list__item a:hover {
   text-decoration: underline;
 }

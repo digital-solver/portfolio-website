@@ -326,6 +326,10 @@ button:focus,
   height: 80px;
 }
 
+.project-list__item a {
+  color: var(--info-blue);
+}
+
 .project-list__item a:hover {
   text-decoration: underline;
 }
