@@ -654,7 +654,8 @@ button:focus,
 }
 
 .contact-section .form-item input,
-.contact-section .textarea {
+.contact-section textarea {
+  border: solid 1px;
   border-radius: 5px;
   padding: 5px;
   box-shadow: none;
