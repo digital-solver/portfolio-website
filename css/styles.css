@@ -835,3 +835,9 @@ button:focus,
   color: var(--error-red);
   font-weight: var(--font-heavy);
 }
+
+@media all and (max-width: 650px) {
+  .contact-section {
+    width: 90%;
+  }
+}
