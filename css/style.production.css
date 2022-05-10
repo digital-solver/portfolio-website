@@ -282,6 +282,7 @@ button:focus {
 
 .navigation-list__item--active {
   text-decoration: underline;
+  font-weight: 500;
 }
 
 @media all and (max-width: 500px) {
