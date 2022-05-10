@@ -257,9 +257,9 @@ button:focus,
       transform: rotate(0deg);
     }
 
-     100% {
+    100% {
       transform: rotate(32.5deg);
-     }
+    }
   }
 
   @keyframes hamburger-cross-middle-open {
@@ -267,9 +267,9 @@ button:focus,
       transform: translateX(0px);
     }
 
-     100% {
+    100% {
       transform: translateX(600px);
-     }
+    }
   }
 
   @keyframes hamburger-cross-bottom-open {
@@ -277,9 +277,9 @@ button:focus,
       transform: rotate(0deg);
     }
 
-     100% {
+    100% {
       transform: rotate(-32.5deg);
-     }
+    }
   }
 
 
@@ -307,7 +307,7 @@ button:focus,
     transform: translateY(-180px);
     height: 1px;
   }
-  
+
 
   .navigation-list ul li {
     list-style-type: none;
@@ -323,33 +323,35 @@ button:focus,
   #menu-svg-path-top {
     transform-origin: left;
   }
+
   #menu-svg-path-middle {
     transform-origin: left;
   }
+
   #menu-svg-path-bottom {
     transform-origin: left;
   }
 
-  .open-menu-top{
+  .open-menu-top {
     animation: hamburger-cross-top-open .4s 1.2s forwards ease-in-out;
 
   }
 
-  .open-menu-middle{
+  .open-menu-middle {
     animation: hamburger-cross-middle-open .25s .8s forwards;
 
   }
 
-  .open-menu-bottom{
+  .open-menu-bottom {
     animation: hamburger-cross-bottom-open .4s .9s forwards ease-in-out;
 
   }
 
-  .open-menu-content{
+  .open-menu-content {
     animation: mobile-menu-items-open .75s forwards;
   }
 
-  .close-menu-content{
+  .close-menu-content {
     animation: mobile-menu-items-close .75s;
   }
 
@@ -398,14 +400,14 @@ button:focus,
 }
 
 .profile__portrait-container {
-  flex-basis: 400px;
+  flex-basis: 300px;
 }
 
 .profile__portrait {
   float: left;
-  width: 100%;
+  width: 80%;
   border-radius: 50%;
-  max-width: 500px;
+  max-width: 300px;
   flex-basis: 100px;
   flex-shrink: 1;
 }
@@ -413,6 +415,22 @@ button:focus,
 .profile__textblock {
   flex-basis: 250px;
   flex-shrink: 0;
+}
+
+@media all and (max-width:500px) {
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile__portrait {
+    float: none;
+    margin: auto;
+  }
+
+  .profile__textblock {
+    text-align: center;
+  }
 }
 
 /* 
