@@ -18,16 +18,31 @@
 <body>
     <!-- HEADER -->
     <header class="page-header">
-        <a href="index.html"><img src="../img/tds-site-identity-logo.svg" alt="The Digital Solver Logo"
+        <a href="index.html"><img src="img/tds-site-identity-logo.svg" alt="The Digital Solver Logo"
                 class="page-header__logo page-header__item"></a>
-        <nav class="navigation-list page-header__item" id="main-menu">
-            <ul role="menubar">
-                <li role="presentation"><a href="index.html" role="menuitem" class="navigation-list__item--active">Home</a></li>
+        <nav class="navigation-list page-header__item menu-untouched" id="main-menu">
+            <ul role="menubar" class="navigation-list__unordered-list" id="main-nav-ul">
+                <li role="presentation"><a href="index.html" role="menuitem">Home</a></li>
                 <li role="presentation"><a href="about.html" role="menuitem">About</a></li>
                 <li role="presentation"><a href="contact.html" role="menuitem">Contact</a></li>
                 <li role="presentation"><a href="work.html" role="menuitem">Work</a></li>
             </ul>
         </nav>
+        <div class="page-header__menu-icon-container"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 384.97 384.97"
+                style="enable-background:new 0 0 384.97 384.97;" xml:space="preserve" width="27px">
+                <g>
+                    <g id="menu-svg">
+                        <path d="M12.03,84.212h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03
+                   C5.39,60.152,0,65.541,0,72.182C0,78.823,5.39,84.212,12.03,84.212z" id="menu-svg-path-top" />
+                        <path d="M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03
+                   S379.58,180.455,372.939,180.455z" id="menu-svg-path-middle" />
+                        <path d="M372.939,300.758H12.03c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h360.909
+                   c6.641,0,12.03-5.39,12.03-12.03C384.97,306.147,379.58,300.758,372.939,300.758z"
+                            id="menu-svg-path-bottom" />
+                    </g>
+                </g>
+            </svg></div>
     </header>
 
     <!-- MAIN -->
@@ -1903,6 +1918,7 @@
 
     <!-- SCRIPTS -->
     <!-- <script src="js/tota11y.min.js"></script> -->
+    <script src="js/menu-animation.js"></script>
 </body>
 
 </html>

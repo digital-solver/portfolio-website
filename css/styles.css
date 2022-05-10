@@ -8,7 +8,7 @@ Table of Contents:
 5. Global: Footer
 6. Page: Home
 7. Page: Work
-8. Page: About
+8. Page: About & SVG Animation
 9. Page: Contact
 */
 
@@ -23,6 +23,7 @@ Table of Contents:
 
 header {
   margin: 0;
+  width: 100%;
 }
 
 main {
@@ -194,9 +195,13 @@ button:focus,
 */
 .page-header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  padding: 20px;
+  height: 75px;
+  padding: 5px 20px;
   background-color: var(--bg-lightgrey);
+  border-bottom: solid var(--card-border);
 }
 
 .page-header a:visited {
@@ -211,19 +216,142 @@ button:focus,
   flex-basis: 70px;
 }
 
-.page-header__item:last-child {
+.page-header__menu-icon-container {
+  display: none;
+}
+
+.page-header__item:nth-child(2) {
   flex-grow: 1;
   text-align: right;
+  display: flex;
+  justify-content: end;
 }
 
 .navigation-list ul li {
   list-style-type: none;
   display: inline-block;
-  margin-left: 15px;
+  margin-right: 20px;
 }
 
 .navigation-list__item--active {
   text-decoration: underline;
+}
+
+@media all and (max-width: 500px) {
+
+  @keyframes mobile-menu-items-open {
+    0% {
+      transform: translateY(-150px);
+      height: auto;
+    }
+
+    100% {
+      transform: translateY(73px);
+      height: auto;
+    }
+  }
+
+  @keyframes hamburger-cross-top-open {
+    0% {
+      transform: rotate(none);
+    }
+
+     100% {
+      transform: rotate(32.5deg);
+     }
+  }
+
+  @keyframes hamburger-cross-middle-open {
+    0% {
+      transform: translateX(0px);
+    }
+
+     100% {
+      transform: translateX(600px);
+     }
+  }
+
+  @keyframes hamburger-cross-bottom-open {
+    0% {
+      transform: rotate(none);
+    }
+
+     100% {
+      transform: rotate(-32.5deg);
+     }
+  }
+
+
+  @keyframes mobile-menu-items-close {
+    0% {
+      transform: translateY(73px);
+      height: auto;
+    }
+
+    100% {
+      transform: translateY(-150px);
+      height: auto;
+    }
+  }
+
+  .page-header__menu-icon-container {
+    display: inline-block;
+  }
+
+  .navigation-list ul {
+    background-color: var(--bg-lightgrey);
+    border-radius: 5px;
+    padding: 10px 5px 3px 30px;
+    border-bottom: solid var(--card-border);
+    transform: translateY(-180px);
+    height: 1px;
+  }
+  
+
+  .navigation-list ul li {
+    list-style-type: none;
+    display: block;
+    height: 40px;
+    padding: 5px 0;
+  }
+
+  .navigation-list__item--active {
+    text-decoration: underline;
+  }
+
+  #menu-svg-path-top {
+    transform-origin: left;
+  }
+  #menu-svg-path-middle {
+    transform-origin: left;
+  }
+  #menu-svg-path-bottom {
+    transform-origin: left;
+  }
+
+  .open-menu-top{
+    animation: hamburger-cross-top-open .4s 1.2s forwards ease-in-out;
+
+  }
+
+  .open-menu-middle{
+    animation: hamburger-cross-middle-open .25s .8s forwards;
+
+  }
+
+  .open-menu-bottom{
+    animation: hamburger-cross-bottom-open .4s .9s forwards ease-in-out;
+
+  }
+
+  .open-menu-content{
+    animation: mobile-menu-items-open .75s forwards;
+  }
+
+  .close-menu-content{
+    animation: mobile-menu-items-close .75s;
+  }
+
 }
 
 /* 
@@ -392,7 +520,7 @@ button:focus,
 
 /* 
 =====================================
-8. ABOUT PAGE
+8. ABOUT PAGE & SVG ANIMATION
 =====================================
 */
 
