@@ -521,6 +521,11 @@ button:focus,
   h1 {
     font-size: 2rem;
   }
+
+  .work-section h1 {
+    text-align: center;
+  }
+
 }
 
 /* 0px to 500px only */
