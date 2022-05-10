@@ -772,6 +772,16 @@ button:focus,
   animation: 40s windy-clouds-back infinite linear;
 }
 
+@media all and (max-width: 770px) {
+  .about-page__table-container {
+    width: 90%;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 0 auto;
+  }
+
+}
+
 /* 
 =====================================
 9. CONTACT PAGE

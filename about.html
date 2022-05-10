@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
@@ -22,9 +22,9 @@
                 class="page-header__logo page-header__item"></a>
         <nav class="navigation-list page-header__item menu-untouched" id="main-menu">
             <ul role="menubar" class="navigation-list__unordered-list" id="main-nav-ul">
-                <li role="presentation"><a href="index.html" role="menuitem"
-                        >Home</a></li>
-                <li role="presentation"><a href="about.html" role="menuitem" class="navigation-list__item--active">About</a></li>
+                <li role="presentation"><a href="index.html" role="menuitem">Home</a></li>
+                <li role="presentation"><a href="about.html" role="menuitem"
+                        class="navigation-list__item--active">About</a></li>
                 <li role="presentation"><a href="contact.html" role="menuitem">Contact</a></li>
                 <li role="presentation"><a href="work.html" role="menuitem">Work</a></li>
             </ul>
@@ -51,44 +51,47 @@
         <h1>About Me</h1>
         <p class="about-page__subheading">This is a page all about my <b>relevant experience</b> as a full-stack
             developer.</p>
-        <table>
-            <thead>
-                <tr>
-                    <th scope="col" class="about-page__column-th">Language</th>
-                    <th scope="col" class="about-page__column-th">Technology</th>
-                    <th scope="col" class="about-page__column-th">Project</th>
-                    <th scope="col" class="about-page__column-th">Experience</th>
-                </tr>
-            </thead>
+        <div class="about-page__table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col" class="about-page__column-th">Language</th>
+                        <th scope="col" class="about-page__column-th">Technology</th>
+                        <th scope="col" class="about-page__column-th">Project</th>
+                        <th scope="col" class="about-page__column-th">Experience</th>
+                    </tr>
+                </thead>
 
-            <tbody>
-                <tr>
-                    <th scope="row">HTML</th>
-                    <td>Semantic HTML5</td>
-                    <td>Portfolio Website</td>
-                    <td>1 Month</td>
-                </tr>
-                <tr>
-                    <th scope="row">CSS</th>
-                    <td>CSS3</td>
-                    <td>Portfolio Website</td>
-                    <td>1 Month</td>
-                </tr>
-                <tr>
-                    <th scope="row">JavaScript</th>
-                    <td>Vanilla JS</td>
-                    <td>Portfolio Website</td>
-                    <td>0 Months</td>
-                </tr>
-                <tr>
-                    <th scope="row">Python</th>
-                    <td>Selenium</td>
-                    <td>Web Scraper</td>
-                    <td>4 Months</td>
-                </tr>
-            </tbody>
-        </table>
-        <a href="https://www.dropbox.com/s/ydd6am2igaxt2lg/Kerr%20Campbell%20CV%20-%20Chief%20Commercial%20Officer%20%28CCO%29%20at%20Unlocking%20Potential%281%29.pdf?dl=0" class="button about-page__download" download target="_blank">Download my CV</a>
+                <tbody>
+                    <tr>
+                        <th scope="row">HTML</th>
+                        <td>Semantic HTML5</td>
+                        <td>Portfolio Website</td>
+                        <td>1 Month</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">CSS</th>
+                        <td>CSS3</td>
+                        <td>Portfolio Website</td>
+                        <td>1 Month</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">JavaScript</th>
+                        <td>Vanilla JS</td>
+                        <td>Portfolio Website</td>
+                        <td>0 Months</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Python</th>
+                        <td>Selenium</td>
+                        <td>Web Scraper</td>
+                        <td>4 Months</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <a href="https://www.dropbox.com/s/ydd6am2igaxt2lg/Kerr%20Campbell%20CV%20-%20Chief%20Commercial%20Officer%20%28CCO%29%20at%20Unlocking%20Potential%281%29.pdf?dl=0"
+            class="button about-page__download" download target="_blank">Download my CV</a>
 
     </main>
 
@@ -97,7 +100,8 @@
         <p>Find me on:</p>
         <ul class="social-media">
             <li><a href="mailto:kerr.digitalsolver@gmail.com"><img src="/img/email-icon.svg" alt="email-icon"></a></li>
-            <li><a href="https://www.linkedin.com/in/kerrcampbell/"><img src="img/linkedin.svg" alt="linkedin-logo"></a></li>
+            <li><a href="https://www.linkedin.com/in/kerrcampbell/"><img src="img/linkedin.svg" alt="linkedin-logo"></a>
+            </li>
             <li><a href="https://github.com/Digital-Solver"><img src="img/github.svg" alt="github-logo"></a></li>
         </ul>
     </footer>
