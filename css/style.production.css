@@ -36,6 +36,7 @@ header {
 main {
   margin: 0;
   padding: 20px;
+  min-height: 75vh;
 }
 
 footer {
