@@ -317,8 +317,8 @@ button:focus {
 
   @-webkit-keyframes hamburger-cross-top-open {
     0% {
-      -webkit-transform: rotate(none);
-              transform: rotate(none);
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
     }
 
      100% {
@@ -329,8 +329,8 @@ button:focus {
 
   @keyframes hamburger-cross-top-open {
     0% {
-      -webkit-transform: rotate(none);
-              transform: rotate(none);
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
     }
 
      100% {
@@ -365,8 +365,8 @@ button:focus {
 
   @-webkit-keyframes hamburger-cross-bottom-open {
     0% {
-      -webkit-transform: rotate(none);
-              transform: rotate(none);
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
     }
 
      100% {
@@ -377,8 +377,8 @@ button:focus {
 
   @keyframes hamburger-cross-bottom-open {
     0% {
-      -webkit-transform: rotate(none);
-              transform: rotate(none);
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
     }
 
      100% {
