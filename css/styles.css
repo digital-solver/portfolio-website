@@ -451,6 +451,10 @@ button:focus,
 =====================================
 */
 
+.work-section {
+  text-align: center;
+}
+
 .project-list {
   margin: 0px auto;
   max-width: 1320px;
