@@ -17,6 +17,7 @@ Table of Contents:
 7. Page: Work
 8. Page: About & SVG Animation
 9. Page: Contact
+10. SVG Animation
 */
 
 /* 
@@ -321,10 +322,10 @@ button:focus {
               transform: rotate(0deg);
     }
 
-     100% {
+    100% {
       -webkit-transform: rotate(32.5deg);
               transform: rotate(32.5deg);
-     }
+    }
   }
 
   @keyframes hamburger-cross-top-open {
@@ -333,10 +334,10 @@ button:focus {
               transform: rotate(0deg);
     }
 
-     100% {
+    100% {
       -webkit-transform: rotate(32.5deg);
               transform: rotate(32.5deg);
-     }
+    }
   }
 
   @-webkit-keyframes hamburger-cross-middle-open {
@@ -345,10 +346,10 @@ button:focus {
               transform: translateX(0px);
     }
 
-     100% {
+    100% {
       -webkit-transform: translateX(600px);
               transform: translateX(600px);
-     }
+    }
   }
 
   @keyframes hamburger-cross-middle-open {
@@ -357,10 +358,10 @@ button:focus {
               transform: translateX(0px);
     }
 
-     100% {
+    100% {
       -webkit-transform: translateX(600px);
               transform: translateX(600px);
-     }
+    }
   }
 
   @-webkit-keyframes hamburger-cross-bottom-open {
@@ -369,10 +370,10 @@ button:focus {
               transform: rotate(0deg);
     }
 
-     100% {
+    100% {
       -webkit-transform: rotate(-32.5deg);
               transform: rotate(-32.5deg);
-     }
+    }
   }
 
   @keyframes hamburger-cross-bottom-open {
@@ -381,10 +382,10 @@ button:focus {
               transform: rotate(0deg);
     }
 
-     100% {
+    100% {
       -webkit-transform: rotate(-32.5deg);
               transform: rotate(-32.5deg);
-     }
+    }
   }
 
 
@@ -431,7 +432,7 @@ button:focus {
             transform: translateY(-180px);
     height: 1px;
   }
-  
+
 
   .navigation-list ul li {
     list-style-type: none;
@@ -449,41 +450,43 @@ button:focus {
         -ms-transform-origin: left;
             transform-origin: left;
   }
+
   #menu-svg-path-middle {
     -webkit-transform-origin: left;
         -ms-transform-origin: left;
             transform-origin: left;
   }
+
   #menu-svg-path-bottom {
     -webkit-transform-origin: left;
         -ms-transform-origin: left;
             transform-origin: left;
   }
 
-  .open-menu-top{
+  .open-menu-top {
     -webkit-animation: hamburger-cross-top-open .4s 1.2s forwards ease-in-out;
             animation: hamburger-cross-top-open .4s 1.2s forwards ease-in-out;
 
   }
 
-  .open-menu-middle{
+  .open-menu-middle {
     -webkit-animation: hamburger-cross-middle-open .25s .8s forwards;
             animation: hamburger-cross-middle-open .25s .8s forwards;
 
   }
 
-  .open-menu-bottom{
+  .open-menu-bottom {
     -webkit-animation: hamburger-cross-bottom-open .4s .9s forwards ease-in-out;
             animation: hamburger-cross-bottom-open .4s .9s forwards ease-in-out;
 
   }
 
-  .open-menu-content{
+  .open-menu-content {
     -webkit-animation: mobile-menu-items-open .75s forwards;
             animation: mobile-menu-items-open .75s forwards;
   }
 
-  .close-menu-content{
+  .close-menu-content {
     -webkit-animation: mobile-menu-items-close .75s;
             animation: mobile-menu-items-close .75s;
   }
@@ -547,15 +550,15 @@ button:focus {
 }
 
 .profile__portrait-container {
-  -ms-flex-preferred-size: 400px;
-      flex-basis: 400px;
+  -ms-flex-preferred-size: 300px;
+      flex-basis: 300px;
 }
 
 .profile__portrait {
   float: left;
-  width: 100%;
+  width: 80%;
   border-radius: 50%;
-  max-width: 500px;
+  max-width: 300px;
   -ms-flex-preferred-size: 100px;
       flex-basis: 100px;
   -ms-flex-negative: 1;
@@ -567,6 +570,25 @@ button:focus {
       flex-basis: 250px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+@media all and (max-width:500px) {
+  .profile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+
+  .profile__portrait {
+    float: none;
+    margin: auto;
+  }
+
+  .profile__textblock {
+    text-align: center;
+  }
 }
 
 /* 
@@ -671,6 +693,11 @@ button:focus {
   h1 {
     font-size: 2rem;
   }
+
+  .work-section h1 {
+    text-align: center;
+  }
+
 }
 
 /* 0px to 500px only */
@@ -699,14 +726,26 @@ button:focus {
   text-align: center;
 }
 
-.about-page__download a:visited {
-  color: #fff9fb;
-}
+/* .about-page__download a:visited {
+  color: var(--text-snow);
+} */
 
-.about-page__subheading,
-.berlin-card__heading {
+.about-page__subheading {
   margin-top: 1.5rem;
   margin-bottom: 4rem;
+}
+
+.about-page table {
+  background-color: #f0f0f0;
+  border: 1px solid #d8d8d8;
+  border-radius: 5px;
+  padding: 2rem;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .about-page th,
@@ -715,13 +754,113 @@ button:focus {
   padding: 0 2rem;
 }
 
-.about-page table,
-.about-page svg {
+.about-page__download {
+  margin: 4rem;
+}
+
+.about-page thead tr th {
+  text-decoration: underline;
+  padding-bottom: 15px;
+}
+
+.about-page tbody tr th {
+  font-weight: 300;
+}
+
+@media all and (max-width: 770px) {
+  .about-page__table-container {
+    width: 90%;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 0 auto;
+  }
+
+}
+
+/* 
+=====================================
+9. CONTACT PAGE
+=====================================
+*/
+
+.contact-section {
+  width: 50%;
   margin: 0 auto;
 }
 
-.about-page__download {
-  margin: 4rem;
+.contact-info-container {
+  text-align: center;
+}
+
+.contact-section form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.contact-section .form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.contact-section .form-item input,
+.contact-section textarea {
+  border: solid 1px;
+  border-radius: 5px;
+  padding: 5px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.visuallyhidden {
+  border: 0;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.form__label--required {
+  color: #ba1509;
+  font-weight: 700;
+}
+
+@media all and (max-width: 650px) {
+  .contact-section {
+    width: 90%;
+  }
+}
+
+/* 
+=====================================
+10. SVG Animation
+=====================================
+*/
+
+.berlin-card__heading {
+  margin-top: 1.5rem;
+  margin-bottom: 4rem;
 }
 
 .berlin-card {
@@ -740,31 +879,6 @@ button:focus {
   padding: 2rem;
   max-width: 750px;
   margin: 0 auto;
-}
-
-.about-page table {
-  background-color: #f0f0f0;
-  border: 1px solid #d8d8d8;
-  border-radius: 5px;
-  padding: 2rem;
-  max-width: 750px;
-  margin: 0 auto;
-}
-
-.about-page table {
-  padding: 1rem;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-}
-
-.about-page thead tr th {
-  text-decoration: underline;
-  padding-bottom: 15px;
-}
-
-.about-page tbody tr th {
-  font-weight: 300;
 }
 
 /* Animation Colours */
@@ -1061,73 +1175,4 @@ button:focus {
 #berlin-svg-illustration .cloud-back {
   -webkit-animation: 40s windy-clouds-back infinite linear;
           animation: 40s windy-clouds-back infinite linear;
-}
-
-/* 
-=====================================
-9. CONTACT PAGE
-=====================================
-*/
-
-.contact-section {
-  width: 50%;
-  margin: 0 auto;
-}
-
-.contact-info-container {
-  text-align: center;
-}
-
-.contact-section form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.contact-section .form-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  width: 100%;
-  padding: 10px 0;
-}
-
-.contact-section .form-item input,
-.contact-section textarea {
-  border: solid 1px;
-  border-radius: 5px;
-  padding: 5px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.visuallyhidden {
-  border: 0;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-.form__label--required {
-  color: #ba1509;
-  font-weight: 700;
 }

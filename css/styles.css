@@ -10,6 +10,7 @@ Table of Contents:
 7. Page: Work
 8. Page: About & SVG Animation
 9. Page: Contact
+10. SVG Animation
 */
 
 /* 
@@ -552,14 +553,24 @@ button:focus,
   text-align: center;
 }
 
-.about-page__download a:visited {
+/* .about-page__download a:visited {
   color: var(--text-snow);
-}
+} */
 
-.about-page__subheading,
-.berlin-card__heading {
+.about-page__subheading {
   margin-top: 1.5rem;
   margin-bottom: 4rem;
+}
+
+.about-page table {
+  background-color: var(--bg-lightgrey);
+  border: 1px solid var(--card-border);
+  border-radius: 5px;
+  padding: 2rem;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: fit-content;
 }
 
 .about-page th,
@@ -568,29 +579,8 @@ button:focus,
   padding: 0 2rem;
 }
 
-.about-page table,
-.about-page svg {
-  margin: 0 auto;
-}
-
 .about-page__download {
   margin: 4rem;
-}
-
-.berlin-card,
-.berlin-card__canvas,
-.about-page table {
-  background-color: var(--bg-lightgrey);
-  border: 1px solid var(--card-border);
-  border-radius: 5px;
-  padding: 2rem;
-  max-width: 750px;
-  margin: 0 auto;
-}
-
-.about-page table {
-  padding: 1rem;
-  max-width: fit-content;
 }
 
 .about-page thead tr th {
@@ -600,6 +590,97 @@ button:focus,
 
 .about-page tbody tr th {
   font-weight: 300;
+}
+
+@media all and (max-width: 770px) {
+  .about-page__table-container {
+    width: 90%;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 0 auto;
+  }
+
+}
+
+/* 
+=====================================
+9. CONTACT PAGE
+=====================================
+*/
+
+.contact-section {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contact-info-container {
+  text-align: center;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.contact-section .form-item {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.contact-section .form-item input,
+.contact-section textarea {
+  border: solid 1px;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: none;
+}
+
+.visuallyhidden {
+  border: 0;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.form__label--required {
+  color: var(--error-red);
+  font-weight: var(--font-heavy);
+}
+
+@media all and (max-width: 650px) {
+  .contact-section {
+    width: 90%;
+  }
+}
+
+/* 
+=====================================
+10. SVG Animation
+=====================================
+*/
+
+.berlin-card__heading {
+  margin-top: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.berlin-card,
+.berlin-card__canvas {
+  background-color: var(--bg-lightgrey);
+  border: 1px solid var(--card-border);
+  border-radius: 5px;
+  padding: 2rem;
+  max-width: 750px;
+  margin: 0 auto;
 }
 
 /* Animation Colours */
@@ -775,74 +856,4 @@ button:focus,
 
 #berlin-svg-illustration .cloud-back {
   animation: 40s windy-clouds-back infinite linear;
-}
-
-@media all and (max-width: 770px) {
-  .about-page__table-container {
-    width: 90%;
-    overflow-x: auto;
-    white-space: nowrap;
-    margin: 0 auto;
-  }
-
-}
-
-/* 
-=====================================
-9. CONTACT PAGE
-=====================================
-*/
-
-.contact-section {
-  width: 50%;
-  margin: 0 auto;
-}
-
-.contact-info-container {
-  text-align: center;
-}
-
-.contact-section form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.contact-section .form-item {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  width: 100%;
-  padding: 10px 0;
-}
-
-.contact-section .form-item input,
-.contact-section textarea {
-  border: solid 1px;
-  border-radius: 5px;
-  padding: 5px;
-  box-shadow: none;
-}
-
-.visuallyhidden {
-  border: 0;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-.form__label--required {
-  color: var(--error-red);
-  font-weight: var(--font-heavy);
-}
-
-@media all and (max-width: 650px) {
-  .contact-section {
-    width: 90%;
-  }
 }
