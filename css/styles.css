@@ -209,7 +209,6 @@ button:focus,
   /* background-color: var(--text-eerieblack); */
   /* clip-path: circle(50px at 0 10px); */
   border-radius: 15px;
-  filter: brightness(100%);
 }
 
 /* .page-header__logo {
@@ -314,7 +313,7 @@ button:focus,
   }
 
   .navigation-list ul {
-    background-color: var(--bg-lightgrey);
+    background-color: var(--blue-munsell);
     border-radius: 5px;
     padding: 10px 5px 3px 30px;
     border-bottom: solid var(--card-border);
