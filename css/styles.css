@@ -4,7 +4,7 @@ Table of Contents:
 1. Global: Colours
 2. Global: Text
 3. Global: Interactive Elements
-4. Global: Primary Navigation
+4. Global: Header & Primary Navigation
 5. Global: Footer
 6. Page: Home
 7. Page: Work
@@ -191,7 +191,7 @@ button:focus,
 
 /* 
 =====================================
-4. PRIMARY NAVIGATION
+4. HEADER & PRIMARY NAVIGATION
 =====================================
 */
 .page-header {
@@ -206,38 +206,21 @@ button:focus,
 }
 
 .page-header__logo-container {
-  /* background-color: var(--text-eerieblack); */
-  /* clip-path: circle(50px at 0 10px); */
   border-radius: 15px;
 }
-
-/* .page-header__logo {
-  background-color: red;
-  clip-path: url('img/tds-logo-single.svg');
-} */
 
 .page-header a,
 .page-header a:visited {
   color: var(--text-snow);
 }
 
-.page-header__item {
-  flex: 0 1 200px;
-}
-
-.page-header__item:first-child {
-  flex-basis: 70px;
-}
-
 .page-header__menu-icon-container {
   display: none;
 }
 
-.page-header__item:nth-child(2) {
-  flex-grow: 1;
+#main-menu {
   text-align: right;
-  display: flex;
-  justify-content: end;
+  margin-left: auto;
 }
 
 .navigation-list ul li {
@@ -337,7 +320,6 @@ button:focus,
   #menu-svg-path-middle,
   #menu-svg-path-bottom {
     transform-origin: left;
-    filter: invert(100%);
   }
 
   .open-menu-top {
@@ -393,11 +375,6 @@ button:focus,
   padding: 0 0.5rem;
   flex-grow: 1;
 }
-
-.page-footer .social-media img {
-  filter: invert(100%);
-}
-
 /* 
 =====================================
 6. HOME PAGE
