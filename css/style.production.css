@@ -632,6 +632,10 @@ button:focus {
   text-decoration: underline;
 }
 
+.project-list__item img {
+  width: 90%;
+}
+
 /* Grid Fallback */
 
 .project-list__item {
