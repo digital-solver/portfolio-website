@@ -2,11 +2,15 @@ Welcome to my JS developer portfolio! This portfolio showcases my skills and exp
 
 Front End Skillset:
 
-- Proficiency in front-end JavaScript development, with strong experience in React and Angular frameworks
-- Expertise in web design principles, including user experience (UX) and user interface (UI) design
-- Skilled in HTML5 and CSS3, including modern layout techniques such as grid and flexbox
-- Proficiency in responsive web design and creating intuitive, user-friendly interfaces
-- Experience integrating external APIs and data sources into web applications
+- Experience in front-end JavaScript development, with a strong track record of delivering high-quality, scalable applications using frameworks such as React and Angular
+- Demonstrated expertise in web design principles, including a deep understanding of UX and UI design and a proven ability to create visually appealing and user-friendly interfaces
+- Expertise in HTML5 and CSS3, including a thorough understanding of modern semantic standards and layout techniques such as grid and flexbox
+- Skilled in responsive web design, with a track record of building websites and web applications that are optimized for a variety of devices and screen sizes
+- Strong ability and extensive experience with design tools like Figma for creating wireframes, prototypes, and visual designs, including interactive prototypes, utilizing a methodology of low, medium, and high fidelity design passes/drafts. Skilled in creating graphics and designs for various purposes.
+- Proficient in integrating external APIs and data sources into web applications, enabling dynamic and engaging user experiences
+- Experience with data visualization libraries and tools such as recharts and D3.js libraries, allowing me to present data in a clear and visually appealing manner
+- Familiarity with user testing techniques and tools, which allows me to gather valuable feedback and continuously improve the user experience of my projects
+- Commitment to building websites and web applications that are accessible and adhere to best practices in web accessibility, ensuring that all users can access and benefit from my work
 
 Back End Skillset:
 
