@@ -97,75 +97,426 @@
       </div>
     </header>
 
-    <!-- MAIN CONTENT -->
+    <!-- MAIN CONTENT V2 -->
     <main>
       <section class="work-section">
         <h1>My Work</h1>
-        <div class="project-list">
-          <div class="project-list__item">
-            <h2>This Portfolio Website</h2>
-            <p>
-              This website acts as a piece of the portfolio itself,
-              demonstrating my skills in Sematnic HTML5 and CSS3.
-            </p>
-            <a href="https://github.com/Digital-Solver/portfolio-website"
-              >See the code for this project on GitHub</a
-            >
-          </div>
-          <div class="project-list__item">
-            <h2>Pokedex App</h2>
-            <p>
-              Explore the original list of 151 Pokemon, click on each one to see
-              the details, and find for your favourites using the search
-              feature. The goal was to build a small web application with HTML,
-              CSS, and JavaScript that loads data from an external API and
-              enables the viewing of data points in detail.
-            </p>
-            <a href="https://github.com/Digital-Solver/pokedex-app"
-              >GitHub Repo</a
-            >
-          </div>
-          <div class="project-list__item">
-            <h2>SVG Animation</h2>
-            <p>
-              This is an svg animation that shows what I've learned about
-              animation using CSS.
-            </p>
-            <a href="/projects/svg-animation.html">See the animation.</a>
-          </div>
-          <div class="project-list__item">
-            <h2>Movie App: Scynapse - Back End Server</h2>
-            <p>An API that serves movies.</p>
-            <a href="https://github.com/Digital-Solver/movie-api"
-              >GitHub Repo</a
-            >
-            <a href="https://kds-scynapse.netlify.app/">Live Site</a>
-          </div>
-          <div class="project-list__item">
-            <h2>Movie App: Scynapse - Front End</h2>
-            <p>
-              This is the repository for the React front end of the Scynapse
-              app.
-            </p>
-            <a href="https://github.com/Digital-Solver/movie-app-client"
-              >GitHub Repo</a
-            >
-            <a href="https://kds-scynapse.netlify.app/">Live Site</a>
-          </div>
-          <div class="project-list__item">
-            <img src="img/meetapp-thumb.png" alt="MeetApp Thumbnail">
-            <h2>Meetup App: Meet App</h2>
-            <p>
-              An app to help you connect with likeminded people in your city by
-              finding events you are interested in. Serverless, PWA, TDD & BDD,
-              Google Calendar API, OAuth, Data Visualisation (Recharts)
-            </p>
-            <a href="https://digital-solver.github.io/meetapp/">
-              Go To MeetApp
-            </a>
-            <a href="https://github.com/Digital-Solver/meetapp">GitHub Repo</a>
-          </div>
-        </div>
+        <ul class="project-list">
+          <li class="project-card">
+            <!-- DONE: Scynapse: React -->
+            <h2 class="project-card__title" tabindex="0">
+              Scynapse: React Front End
+            </h2>
+            <img
+              class="project-card__screenshot"
+              src="img/scynapse-react.png"
+              alt="Screenshot of the React front end for the Scynapse app"
+            />
+            <div class="project-card__description">
+              <p>
+                The goal of Scynapse was to develop a full-stack MERN
+                application that allows users to easily access and save
+                information about movies they like. This repository holds the
+                code for the React client-side of the application.
+              </p>
+              <ul>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Redux</li>
+                <li>HTML5</li>
+                <li>SCSS</li>
+                <li>Bootstrap</li>
+              </ul>
+            </div>
+            <div class="project-card__links">
+              <a
+                class="project-card__link"
+                href="https://github.com/digital-solver/scynapse-react"
+                >GitHub Repository</a
+              > 
+              <a
+                class="project-card__link"
+                href="https://kds-scynapse.netlify.app/"
+                >Live Project</a
+              >
+            </div>
+            <div class="project-card__resources">
+              <h3>Additional Resources</h3>
+              <ul class="project-card__resource-list">
+                <li>
+                  <a
+                    class="project-card__resource-link"
+                    href="uhttps://www.figma.com/file/Gjawqdze11hZtZk6gICGTw/Scynapse-UI?node-id=0%3A1&t=A6EFqaacepAB69QC-1"
+                    >Figma UI Design</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="project-card__resource-link"
+                    href="https://iced-pansy-d27.notion.site/584063721e384065b2c1af43e3ede2f4?v=4008d8a4cfed43739e09f26eb4162fab"
+                    >Kanban Board</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="project-card__resource-link"
+                    href="media/scynapse-react-user-stories.pdf"
+                    >User Stories</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="project-card">
+            <!-- DONE: Scynapse: API -->
+            <h2 class="project-card__title" tabindex="0">
+              Scynapse: Back End Server & API
+            </h2>
+            <img
+              class="project-card__screenshot"
+              src="img/scynapse-api.png"
+              alt="Screenshot of API documentation for the Scynapse app's back end"
+            />
+            <div class="project-card__description">
+              <p>
+                A server and API back end for a web application for movie
+                enthusiasts to access information about different movies,
+                directors, and genres, and to update their personal information
+                and create a list of their favorite movies.
+              </p>
+              <ul>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>Morgan</li>
+                <li>CORS</li>
+                <li>MongoDB & Mongoose</li>
+                <li>Passport & JWT</li>
+              </ul>
+            </div>
+            <div class="project-card__links">
+              <a
+                class="project-card__link"
+                href="https://github.com/digital-solver/scynapse-api"
+                >GitHub Repository</a
+              > 
+              <a
+                class="project-card__link"
+                href="https://kds-movie-api.herokuapp.com"
+                >Live Project</a
+              >
+            </div>
+            <div class="project-card__resources">
+              <h3>Additional Resources</h3>
+              <ul class="project-card__resource-list">
+                <li>
+                  <a
+                    class="project-card__resource-link"
+                    href="media/scynapse-api-user-stories.pdf"
+                    >User stories</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="project-card__resource-link"
+                    href="https://iced-pansy-d27.notion.site/63ba2ccd08da450ca0cc5d1f7d22a867?v=1672eab2511c4e42aeed9627a220044e"
+                    >Kanban Board</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="project-card">
+            <!-- DONE: Scynapse: Angular -->
+            <h2 class="project-card__title" tabindex="0">
+              Scynapse: Angular Front End
+            </h2>
+            <img
+              class="project-card__screenshot"
+              src="img/scynapse-angular.png"
+              alt="Screenshot of Scynapse Angular front end"
+            />
+            <div class="project-card__description">
+              <p>
+                A single-page, responsive movie app built with Angular, with
+                routing and several interface views. The app allows users to
+                access information about different movies, directors, and
+                genres, as well as create and update their own profiles with
+                their favorite movies.
+              </p>
+              <ul>
+                <li>Angular</li>
+                <li>TypeScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Angular Material</li>
+              </ul>
+            </div>
+            <div class="project-card__links">
+              <a
+                class="project-card__link"
+                href="https://github.com/digital-solver/scynapse-angular"
+                >GitHub Repository</a
+              > 
+              <a
+                class="project-card__link"
+                href="https://digital-solver.github.io/scynapse-angular/"
+                >Live Project</a
+              >
+            </div>
+            <div class="project-card__resources">
+              <h3>Additional Resources</h3>
+              <ul class="project-card__resource-list">
+                <li>
+                  <a
+                    class="project-card__resource-link"
+                    href="media/scynapse-angular-user-flows.pdf"
+                    >User Flow Diagram</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="project-card__resource-link"
+                    href="media/scynapse-angular-user-stories.pdf"
+                    >User Stories</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="project-card__resource-link"
+                    href="https://iced-pansy-d27.notion.site/e12e2d8b2bca48c1973718d8fcec6607?v=77738fcb92c347de9d26ce9d340593cf"
+                    >Kanban Board</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="project-card">
+            <!-- DONE: Portfolio Website -->
+            <h2 class="project-card__title" tabindex="0">Portfolio Website</h2>
+            <img
+              class="project-card__screenshot"
+              src="img/portfolio.png"
+              alt="Screenshot of portfolio website"
+            />
+            <div class="project-card__description">
+              <p>
+                This portfolio showcases my skills and expertise as a developer,
+                including front end development, back end development skills,
+                interface design, and hosting.
+              </p>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Bootstrap</li>
+              </ul>
+            </div>
+            <div class="project-card__links">
+              <a
+                class="project-card__link"
+                href="https://github.com/digital-solver/portfolio-website"
+                >GitHub Repository</a
+              > 
+              <a class="project-card__link" href="/">Live Project</a>
+            </div>
+          </li>
+          <li class="project-card">
+            <!-- DONE: Pokedex App -->
+            <h2 class="project-card__title" tabindex="0">Pokedex App</h2>
+            <img
+              class="project-card__screenshot"
+              src="img/pokedex.png"
+              alt="Screenshot of the Pokedex app"
+            />
+            <div class="project-card__description">
+              <p>
+                A web application built with HTML, CSS, and JavaScript that
+                loads data from an external API and enables the viewing of data
+                points in detail. This app displays a list of Pokémon and allows
+                users to view more details for a given Pokémon on demand.
+              </p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>Bootstrap</li>
+                <li>External Pokemon Data API</li>
+              </ul>
+            </div>
+            <div class="project-card__links">
+              <a
+                class="project-card__link"
+                href="https://github.com/digital-solver/pokedex-app"
+                >GitHub Repository</a
+              > 
+              <a
+                class="project-card__link"
+                href="https://digital-solver.github.io/pokedex-app/"
+                >Live Project</a
+              >
+            </div>
+          </li>
+          <li class="project-card">
+            <!-- DONE: Tasks/Todo App -->
+            <h2 class="project-card__title" tabindex="0">
+              jQuery Tasks To-Do App
+            </h2>
+            <img
+              class="project-card__screenshot"
+              src="img/todo.png"
+              alt="Screenshot of the jQuerry todo app"
+            />
+            <div class="project-card__description">
+              <p>
+                BA simple to-do list app built with jQuery. The user can add new
+                items to a list, cross out completed items, delete items, and
+                change the order of items in the list.
+              </p>
+              <ul>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+            <div class="project-card__links">
+              <a
+                class="project-card__link"
+                href="https://github.com/digital-solver/tasks-app"
+                >GitHub Repository</a
+              > 
+              <a
+                class="project-card__link"
+                href="https://digital-solver.github.io/tasks-app/"
+                >Live Project</a
+              >
+            </div>
+          </li>
+          <li class="project-card">
+            <!-- DONE: Meetapp PWA -->
+            <h2 class="project-card__title" tabindex="0">Meetapp PWA</h2>
+            <img
+              class="project-card__screenshot"
+              src="img/meetapp.png"
+              alt="Screenshot of Meetapp"
+            />
+            <div class="project-card__description">
+              <p>
+                Meetapp is a cross-platform React PWA that helps users to find
+                and connect with likeminded people in their city by discovering
+                events that they are interested in that are happening in their
+                city. By using the Google Calendar API, Meetapp is able to fetch
+                event data and display it to the user in a user-friendly
+                interface.
+              </p>
+              <ul>
+                <li>React</li>
+                <li>PWA & Service Workers</li>
+                <li>Recharts & Data Viz</li>
+                <li>Google Calendar API</li>
+                <li>OAuth2 Authentication</li>
+                <li>AWS Lambda Serverless</li>
+                <li>Jest (Unit & Integration TDD)</li>
+                <li>Jest-Cucumber (BDD)</li>
+                <li>Puppeteer (E2E Tests)</li>
+                <li>GitHub Pages</li>
+                <li>Git for Version Control</li>
+                <li>Atatus for Performance Monitoring</li>
+              </ul>
+            </div>
+            <div class="project-card__links">
+              <a
+                class="project-card__link"
+                href="https://github.com/digital-solver/meetapp"
+                >GitHub Repository</a
+              > 
+              <a
+                class="project-card__link"
+                href="https://digital-solver.github.io/meetapp/"
+                >Live Project</a
+              >
+            </div>
+            <div class="project-card__resources">
+              <h3>Additional Resources</h3>
+              <ul class="project-card__resource-list">
+                <li>
+                  <a
+                    class="project-card__resource-link"
+                    href="media/meetapp-pwa-user-stories.pdf"
+                    >User Stories</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="project-card__resource-link"
+                    href="https://iced-pansy-d27.notion.site/031f395765d247a2bde2da2c79c8feb7?v=a661f44ce2de4673a83e2d90720566c8"
+                    >Kanban board</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="project-card">
+            <!-- DONE: Chattix: Cross platform app -->
+            <h2 class="project-card__title" tabindex="0">
+              Chattix: React Native Cross-Platform Mobile App
+            </h2>
+            <img
+              class="project-card__screenshot"
+              src="img/chattix.png"
+              alt="Screenshot of Chattix on Android"
+            />
+            <div class="project-card__description">
+              <p>
+                Chattix is a cross-platform chat app that allows users to
+                communicate with their friends and family, share images and
+                locations, and even connect with new people. As the sole
+                developer on the project, I was responsible for building the app
+                from the ground up using React Native, Expo, and Google
+                Firebase.
+              </p>
+              <ul>
+                <li>React Native</li>
+                <li>Native APIs (Media Library, Camera, and Geolocation)</li>
+                <li>Expo</li>
+                <li>Google Firestore Database</li>
+                <li>Google Firebase authentication</li>
+                <li>Gifted Chat library</li>
+              </ul>
+            </div>
+            <div class="project-card__links">
+              <a
+                class="project-card__link"
+                href="https://github.com/digital-solver/chattix"
+                >GitHub Repository</a
+              > 
+              <a
+                class="project-card__link"
+                href="https://drive.google.com/file/d/1AekAF-HlA1_lQk52V3LfcZaQMY7DdPlt/view?usp=share_link"
+                >Screen Recording</a
+              >
+            </div>
+            <div class="project-card__resources">
+              <h3>Additional Resources</h3>
+              <ul class="project-card__resource-list">
+                <li>
+                  <a
+                    class="project-card__resource-link"
+                    href="media/chattix-user-stories.pdf"
+                    >User Stories</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="project-card__resource-link"
+                    href="khttps://iced-pansy-d27.notion.site/5166fd5afcbd4166b7214bb66c251424?v=a16528235654461fbe6f7d8e8f4dd42b"
+                    >Kanban board</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
       </section>
     </main>
 
