@@ -144,6 +144,11 @@ a:active {
 }
 
 a:visited {
+  color: #577584;
+  text-decoration: none;
+}
+
+a:visited:hover {
   color: #8faebe;
   text-decoration: none;
 }
@@ -771,72 +776,61 @@ button:focus {
 =====================================
 */
 
-.about-page strong {
-  color: #006699;
-  font-size: 20px;
-  letter-spacing: 1px;
-  line-height: 1.5;
-}
-
-.about-page em {
-  font-style: italic;
-  color: #009933;
-  font-size: 20px;
-  letter-spacing: 1px;
-  line-height: 1.5;
-}
-
-.about-page blockquote {
-  background-color: #f9f9f9;
-  border-left: 10px solid #ccc;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  quotes: "\201C""\201D""\2018""\2019";
-  font-size: 20px;
-  letter-spacing: 1px;
-  line-height: 1.5;
-}
-
-.about-page blockquote:before {
-  color: #ccc;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
-}
-
-.about-page li {
-  font-size: 20px;
-  letter-spacing: 1px;
-  line-height: 1.5; 
-}
-
-.about-page blockquote p {
-  display: inline;
-}
-
-
 .about-page {
   text-align: left;
   max-width: 800px;
   margin: auto;
-}
-
-.about-page p {
   font-size: 20px;
   letter-spacing: 1px;
   line-height: 1.5;
-}
-
-.about-page__subheading {
-  margin-top: 1.5rem;
-  margin-bottom: 4rem;
-}
-
-.about-page__download {
+  }
+  
+  .about-page__subheading {
+  margin: 1.5rem 0 4rem 0;
+  }
+  
+  .about-page__download {
   margin: 4rem;
-}
+  }
+  
+  .about-page strong,
+  .about-page em,
+  .about-page li,
+  .about-page p {
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  }
+
+  .about-page strong {
+    color: #006699;
+  }
+  
+  .about-page em {
+  font-style: italic;
+  color: #009933;
+  }
+  
+  .about-page blockquote {
+  background-color: #f9f9f9;
+  border-left: 7px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  }
+  
+  .about-page blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 3.5em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+  }
+  
+  .about-page blockquote p {
+  display: inline;
+  }
 
 @media all and (max-width: 770px) {
   .about-page__table-container {
