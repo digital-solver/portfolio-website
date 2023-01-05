@@ -3,10 +3,10 @@ Welcome to my JS developer portfolio! This portfolio showcases my skills and exp
 Front End Skillset:
 
 - Experience building high-quality, scalable applications using React and Angular
-- Proficiency in UX/UI design, creating visually appealing and user-friendly interfaces
-- Skilled in HTML5/CSS3, including modern layout techniques and semantic standards
+- Expertise in UX/UI design, creating user-centric, engaging, and high converting interfaces
+- Extensive experience in Figma for wireframing, marketing materials, and interface design, including interactive prototypes
+- Skilled in HTML5/CSS3, including modern semantic standards and layout techniques 
 - Experience with responsive web design, optimizing websites/apps for various devices
-- Proficiency in Figma for wireframing, marketing materials, and interface design, including interactive prototypes
 - Experience integrating APIs/data sources into web applications
 - Familiarity with data visualization libraries such as D3.js and recharts
 - Knowledge of user testing techniques to gather feedback and improve UX
@@ -22,9 +22,10 @@ Back End Skillset:
 
 Other Skills:
 
-- Proficiency in JS testing libraries such as Jest, with experience in unit and integration testing, ensuring code reliability and maintainability
-- Strong problem-solving abilities, and the ability to debug and troubleshoot code efficiently
+- Strong problem-solving abilities
 - Proficiency in version control with Git
+- Proficiency in JS testing libraries such as Jest, with experience in unit and integration testing, ensuring code reliability and maintainability
+- Ability to debug and troubleshoot code efficiently
 - Experience with hosting and deployment, including knowledge of various hosting platforms
 - A passion for staying up-to-date with the latest front-end technologies and industry best practices
 
