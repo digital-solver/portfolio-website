@@ -2,32 +2,32 @@ Welcome to my JS developer portfolio! This portfolio showcases my skills and exp
 
 Front End Skillset:
 
-- Track record of delivering high-quality, scalable applications using React and Angular
-- Demonstrated expertise in UX/UI design, creating visually appealing and user-friendly interfaces
-- Skilled in HTML5/CSS3, including modern layout techniques and semantic standards
-- Proficient in responsive web design, optimizing websites/apps for various devices
-- Proficiency in Figma for wireframing, marketing materials, and interface design, including interactive prototypes
-- Extensive experience integrating APIs/data sources into web applications
-- Experience with data visualization libraries such as D3.js and recharts
-- Familiar with user testing techniques to gather feedback and improve UX
-- Committed to building accessible websites and web applications, adhering to best practices
+- Experience building high-quality, scalable applications using React and Angular
+- Expertise in UX/UI design, creating user-centric, engaging, and high converting interfaces
+- Extensive experience in Figma for wireframing, marketing materials, and interface design, including interactive prototypes
+- Skilled in HTML5/CSS3, including modern semantic standards and layout techniques 
+- Experience with responsive web design, optimizing websites/apps for various devices
+- Experience integrating APIs/data sources into web applications
+- Familiarity with data visualization libraries such as D3.js and recharts
+- Knowledge of user testing techniques to gather feedback and improve UX
+- Commitment to building accessible websites and web applications, adhering to best practices
 
 Back End Skillset:
 
-- Proficiency in back-end JavaScript, with extensive experience in Express for API development and serverless with AWS
-- Expertise in integrating external APIs and data sources, ensuring efficient and secure communication between server and client
-- Experience designing and implementing scalable and maintainable back-end architectures (MVC, SOA, serverless, etc.)
-- Strong debugging and problem-solving abilities, able to troubleshoot and resolve complex issues
-- Proficiency in database management and design, including experience with NoSQL and SQL databases
-- Knowledge of security best practices, able to implement secure authentication and authorization for APIs and applications
+- Proficiency in back-end JavaScript, with experience in Express for API development and serverless with AWS
+- Experience integrating external APIs and data sources, ensuring efficient and secure communication between server and client
+- Familiarity with design and implementation of scalable and maintainable back-end architectures (MVC, SOA, serverless, etc.)
+- Knowledge of database management and design, including experience with NoSQL and SQL databases
+- Understanding of security best practices, able to implement secure authentication and authorization for APIs and applications
 
 Other Skills:
 
+- Strong problem-solving abilities
+- Proficiency in version control with Git
 - Proficiency in JS testing libraries such as Jest, with experience in unit and integration testing, ensuring code reliability and maintainability
-- Strong problem-solving abilities and the ability to debug and troubleshoot code efficiently
-- Proficiency in version control with Git and experience in hosting and deployment of web applications
+- Ability to debug and troubleshoot code efficiently
+- Experience with hosting and deployment, including knowledge of various hosting platforms
 - A passion for staying up-to-date with the latest front-end technologies and industry best practices
-- Experience with hosting and deployment, including knowledge of various hosting platforms and version control with Git
 
 Non-Technical Skills:
 

@@ -1,112 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>About Me</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="shortcut icon" href="img/tds-logo-double.svg" sizes="32x32" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+  </head>
 
-<body>
+  <body>
     <!-- HEADER -->
     <header class="page-header">
-        <a href="index.html" class="page-header__logo-container"><img src="img/tds-logo-double-white.svg" alt="The Digital Solver Logo"
-                class="page-header__logo page-header__item"></a>
-        <nav class="navigation-list page-header__item menu-untouched" id="main-menu">
-            <ul role="menubar" class="navigation-list__unordered-list" id="main-nav-ul">
-                <li role="presentation"><a href="index.html" role="menuitem">Home</a></li>
-                <li role="presentation"><a href="about.html" role="menuitem" class="navigation-list__item--active">About</a></li>
-                <li role="presentation"><a href="work.html" role="menuitem">Work</a></li>
-                <li role="presentation"><a href="contact.html" role="menuitem">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="page-header__menu-icon-container"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 384.97 384.97"
-            style="enable-background:new 0 0 384.97 384.97;" xml:space="preserve" width="27px">
-            <g>
-                <g id="menu-svg">
-                    <path d="M12.03,84.212h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03
-               C5.39,60.152,0,65.541,0,72.182C0,78.823,5.39,84.212,12.03,84.212z" id="menu-svg-path-top"
-                        fill="white" />
-                    <path d="M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03
-               S379.58,180.455,372.939,180.455z" id="menu-svg-path-middle" fill="white" />
-                    <path d="M372.939,300.758H12.03c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h360.909
+      <a href="index.html" class="page-header__logo-container"
+        ><img
+          src="img/tds-logo-double-white.svg"
+          alt="The Digital Solver Logo"
+          class="page-header__logo page-header__item"
+      /></a>
+      <nav
+        class="navigation-list page-header__item menu-untouched"
+        id="main-menu"
+      >
+        <ul
+          role="menubar"
+          class="navigation-list__unordered-list"
+          id="main-nav-ul"
+        >
+          <li role="presentation">
+            <a href="index.html" role="menuitem">Home</a>
+          </li>
+          <li role="presentation">
+            <a
+              href="about.html"
+              role="menuitem"
+              class="navigation-list__item--active"
+              >About</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem">Work</a>
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="page-header__menu-icon-container">
+        <svg
+          version="1.1"
+          id="Capa_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 384.97 384.97"
+          style="enable-background: new 0 0 384.97 384.97"
+          xml:space="preserve"
+          width="27px"
+        >
+          <g>
+            <g id="menu-svg">
+              <path
+                d="M12.03,84.212h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03
+               C5.39,60.152,0,65.541,0,72.182C0,78.823,5.39,84.212,12.03,84.212z"
+                id="menu-svg-path-top"
+                fill="white"
+              />
+              <path
+                d="M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03
+               S379.58,180.455,372.939,180.455z"
+                id="menu-svg-path-middle"
+                fill="white"
+              />
+              <path
+                d="M372.939,300.758H12.03c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h360.909
                c6.641,0,12.03-5.39,12.03-12.03C384.97,306.147,379.58,300.758,372.939,300.758z"
-                        id="menu-svg-path-bottom" fill="white" />
-                </g>
+                id="menu-svg-path-bottom"
+                fill="white"
+              />
             </g>
-        </svg></div>
-    </header> 
+          </g>
+        </svg>
+      </div>
+    </header>
 
     <!-- MAIN -->
     <main class="about-page">
-        <h1>About Me</h1>
-        <p class="about-page__subheading">This is a page all about my relevant experience as a <b>business-oriented</b> full-stack
-            developer.</p>
-        <div class="about-page__table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th scope="col" class="about-page__column-th">Language</th>
-                        <th scope="col" class="about-page__column-th">Technology</th>
-                        <th scope="col" class="about-page__column-th">Project</th>
-                        <th scope="col" class="about-page__column-th">Experience</th>
-                    </tr>
-                </thead>
+      <h1>About Me</h1>
+      <h2>Welcome to my portfolio!</h2>
+      <p>
+        🤖 Hey, I'm <strong>Kerr</strong>, the
+        <a href="https://github.com/digital-solver" target="_blank"
+          >@digital-solver</a
+        >. At heart I'm a 'Solver': an entrepreneurial technologist, inventor,
+        futurist, artificer, and innovator. I am driven by a passion for
+        technology and business and a desire to explore the limitless potential
+        of advanced technologies.
+      </p>
+      <p>
+        🚀 With a strong background in tech startups and a deep fascination with
+        the intersection of technology and business, I am constantly seeking out
+        innovative ways to
+        <em>drive growth and value</em>. My research into the potential for AI
+        to be musically creative sparked a deeper interest in the
+        <strong>business applications of advanced technologies</strong>. I have
+        since dedicated myself to seeking out or building innovative and
+        advanced solutions that address real-world problems and produce
+        widespread value.
+      </p>
+      <blockquote>
+        🌱 As a <strong>full-stack</strong> JavaScript developer with experience
+        in the <strong>MERN</strong> and <strong>MEAN</strong> stacks, I am
+        always looking for new ways to push the boundaries of software
+        development and leverage emerging technologies. I am also committed to
+        staying at or beyond the cutting edge, and am actively studying
+        <strong>Python for AI</strong> and
+        <strong>Rust for performance</strong> to further enhance my skills.
+      </blockquote>
+      <p>
+        🎸 When not dreaming up new tech businesses, you'll find me exploring
+        the interaction of music and technology, whether through improvising a
+        solo on my guitar, composing new pieces, or writing algorithms to
+        generate original compositions. Music is a <em>true passion</em> for me,
+        and I enjoy finding ways to incorporate it into my other interests.
+      </p>
+      <p>
+        📫 If you're interested in discussing tech entrepreneurship, the
+        business applications of technology, or anything else, don't hesitate to
+        reach out to me at
+        <a href="mailto:kerr.digitalsolver@gmail.com"
+          >kerr(dot)digitalsolver@gmail.com</a
+        >. I'm always eager to engage in thought-provoking conversations about
+        the impact of technology on the future and how we can harness its power
+        to create a better world. Let's connect and build something amazing
+        together!
+      </p>
+      <h2>Skills and Experience</h2>
+      <h3>📱 Front End:</h3>
+      <ul>
+        <li>
+          Experience building high-quality, scalable applications using
+          <strong>React</strong> and <strong>Angular</strong>
+        </li>
+        <li>
+          Experience with <strong>React Native</strong> for
+          <em>cross-device mobile development</em>, including building
+          high-quality, scalable applications for <strong>iOS</strong> and
+          <strong>Android</strong>
+        </li>
+        <li>
+          Expertise in <strong>UX/UI design</strong>, creating <em>user-centric</em>, engaging, and
+          high converting interfaces
+        </li>
+        <li>
+          Extensive experience in Figma for wireframing, marketing materials,
+          and interface design, including
+          <strong>interactive prototypes</strong>
+        </li>
+        <li>
+          Skilled in HTML5/CSS3, including modern semantic standards and layout
+          techniques
+        </li>
+        <li>
+          Experience with responsive web design, optimizing websites/apps for
+          various devices
+        </li>
+        <li>Experience integrating APIs/data sources into web applications</li>
+        <li>
+          Familiarity with <strong>data visualization libraries</strong> such as
+          D3.js and recharts
+        </li>
+        <li>
+          Knowledge of user testing techniques to gather feedback and improve UX
+        </li>
+        <li>
+          Commitment to building accessible websites and web applications,
+          adhering to best practices
+        </li>
+      </ul>
+      <h3>💾 Back End:</h3>
+      <ul>
+        <li>
+          Proficiency in back-end JavaScript, with experience in
+          <strong>Express</strong> for API development and
+          <strong>serverless with AWS</strong>
+        </li>
+        <li>
+          Experience integrating external APIs and data sources, ensuring
+          efficient and secure communication between server and client
+        </li>
+        <li>
+          Familiarity with design and implementation of scalable and
+          maintainable back-end architectures (MVC, SOA, serverless, etc.)
+        </li>
+        <li>
+          Knowledge of database management and design, including experience with
+          <strong>NoSQL</strong> and <strong>SQL</strong> databases
+        </li>
+        <li>
+          Understanding of security best practices, able to implement secure
+          authentication and authorization for APIs and applications
+        </li>
+      </ul>
+      <h3>🔬 Other Technical:</h3>
+      <ul>
+        <li>Strong <em>problem-solving</em> abilities</li>
+        <li>Proficiency in version control with <strong>Git</strong></li>
+        <li>
+          Proficiency in JS testing libraries such as <strong>Jest</strong>,
+          with experience in unit and integration testing, ensuring code
+          reliability and maintainability
+        </li>
+        <li>Ability to debug and troubleshoot code efficiently</li>
+        <li>
+          Experience with <strong>hosting and deployment</strong>, including
+          knowledge of various hosting platforms
+        </li>
+        <li>
+          A passion for staying up-to-date with the latest front-end
+          technologies and industry best practices
+        </li>
+      </ul>
+      <h3>💡 Non-Technical:</h3>
+      <p>
+        Strong communication and personal management skills, including the
+        ability to effectively convey
+        <em>technical concepts to non-technical stakeholders</em> and team
+        members, manage client relationships, demonstrate flexibility and
+        adaptability to change, and effectively manage time and personal
+        organization while <em>quickly producing high-quality work</em>.
+      </p>
+      <p>
+        Collaborative mindset, including being open to feedback, professional
+        and approachable, experienced in working in
+        <strong>cross-functional teams</strong>, reliable, always available for
+        communication, and responsive to the needs of the team and the project.
+      </p>
+      <p>
+        Skilled in business and entrepreneurship, including a strong background
+        in <strong>tech startup commercial strategy</strong>, the ability to
+        understand and translate business and project goals into technical
+        solutions, a focus on building strong fundamentals, and the ability to
+        <em>take initiative</em> as needed.
+      </p>
+      <p>
+        Leadership and management skills, including
+        <strong>team facilitation</strong> and coordination, emotional
+        intelligence, the ability to navigate and address team dynamics, a
+        positive influence on the team, and a
+        <em
+          >willingness to take on leadership roles and responsibilities as
+          needed</em
+        >.
+      </p>
+      <p>
+        Creative and innovative in <strong>problem-solving</strong> at both
+        high-level and low-level, skilled at ideation, brainstorming,
+        <em>growth hacking</em>, and applying my ability to learn quickly to
+        solution generation.
+      </p>
 
-                <tbody>
-                    <tr>
-                        <th scope="row">HTML</th>
-                        <td>Semantic HTML5</td>
-                        <td>Portfolio Website</td>
-                        <td>1 Month</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">CSS</th>
-                        <td>CSS3</td>
-                        <td>Portfolio Website</td>
-                        <td>1 Month</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">JavaScript</th>
-                        <td>Vanilla JS</td>
-                        <td>Portfolio Website</td>
-                        <td>0 Months</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Python</th>
-                        <td>Selenium</td>
-                        <td>Web Scraper</td>
-                        <td>4 Months</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <a href="https://www.dropbox.com/s/ydd6am2igaxt2lg/Kerr%20Campbell%20CV%20-%20Chief%20Commercial%20Officer%20%28CCO%29%20at%20Unlocking%20Potential%281%29.pdf?dl=0"
-            class="button about-page__download" download target="_blank">Download my CV</a>
-
+      <h3>Resources</h3>
+      <a
+        href="work.html"
+        class="button about-page__download"
+        download
+        target="_blank"
+        >Check Out My Projects</a
+      >
+      <a
+        href="https://www.dropbox.com/s/ydd6am2igaxt2lg/Kerr%20Campbell%20CV%20-%20Chief%20Commercial%20Officer%20%28CCO%29%20at%20Unlocking%20Potential%281%29.pdf?dl=0"
+        class="button about-page__download"
+        download
+        target="_blank"
+        >Download My CV</a
+      >
     </main>
 
     <!-- FOOTER -->
     <footer class="page-footer">
-        <p>Find me on:</p>
-        <ul class="social-media">
-            <li><a href="mailto:kerr.digitalsolver@gmail.com"><img src="img/email-icon-white.svg" alt="email-icon"></a></li>
-            <li><a href="https://www.linkedin.com/in/kerrcampbell/"><img src="img/linkedin-white.svg" alt="linkedin-logo"></a></li>
-            <li><a href="https://github.com/Digital-Solver"><img src="img/github-white.svg" alt="github-logo"></a></li>
-        </ul>
+      <p>Find me on:</p>
+      <ul class="social-media">
+        <li>
+          <a href="mailto:kerr.digitalsolver@gmail.com"
+            ><img src="img/email-icon-white.svg" alt="email-icon"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/kerrcampbell/"
+            ><img src="img/linkedin-white.svg" alt="linkedin-logo"
+          /></a>
+        </li>
+        <li>
+          <a href="https://github.com/Digital-Solver"
+            ><img src="img/github-white.svg" alt="github-logo"
+          /></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/solver_digital"
+            ><img src="img/twitter-white.svg" alt="twitter-logo"
+          /></a>
+        </li>
+        <li>
+          <a href="https://medium.com/@kerr.digitalsolver"
+            ><img src="img/medium-white.svg" alt="medium-logo"
+          /></a>
+        </li>
+        <li>
+          <a href="https://dev.to/digitalsolver"
+            ><img src="img/dev-to-white.svg" alt="dev-to-logo"
+          /></a>
+        </li>
+      </ul>
     </footer>
     <!-- SCRIPTS -->
     <!-- <script src="js/tota11y.min.js"></script> -->
     <script src="js/menu-animation.js"></script>
-</body>
-
+  </body>
 </html>
