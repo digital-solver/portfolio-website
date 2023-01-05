@@ -771,49 +771,71 @@ button:focus {
 =====================================
 */
 
-.about-page {
-  text-align: center;
+.about-page strong {
+  color: #006699;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.5;
 }
 
-/* .about-page__download a:visited {
-  color: var(--text-snow);
-} */
+.about-page em {
+  font-style: italic;
+  color: #009933;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.about-page blockquote {
+  background-color: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.about-page blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.about-page li {
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.5; 
+}
+
+.about-page blockquote p {
+  display: inline;
+}
+
+
+.about-page {
+  text-align: left;
+  max-width: 800px;
+  margin: auto;
+}
+
+.about-page p {
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
 
 .about-page__subheading {
   margin-top: 1.5rem;
   margin-bottom: 4rem;
 }
 
-.about-page table {
-  background-color: #f0f0f0;
-  border: 1px solid #d8d8d8;
-  border-radius: 5px;
-  padding: 2rem;
-  max-width: 750px;
-  margin: 0 auto;
-  padding: 1rem;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-}
-
-.about-page th,
-.about-page td {
-  text-align: left;
-  padding: 0 2rem;
-}
-
 .about-page__download {
   margin: 4rem;
-}
-
-.about-page thead tr th {
-  text-decoration: underline;
-  padding-bottom: 15px;
-}
-
-.about-page tbody tr th {
-  font-weight: 300;
 }
 
 @media all and (max-width: 770px) {

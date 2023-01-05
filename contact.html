@@ -102,84 +102,16 @@
       <section class="contact-section">
         <div class="contact-info-container">
           <h1>Contact Me</h1>
-
-          <a href="mailto:kerr.digitalsolver@gmail.com?subject=Contact%20form%20messaage&body=Are%20you%20available%20for%20hire%3F">
-            Click Here To Send Me A Message
-          </a>
-
           <p>Please don't hesitate to get in touch:</p>
+          <a
+            href="mailto:kerr.digitalsolver@gmail.com?subject=Contact%20form%20messaage&body=Are%20you%20available%20for%20hire%3F"
+          >
+            Click Here To Send Me A Message
+          </a><br><br>
+          <p>
+            Or drop me a line here:<br /><br />kerr(dot)digitalsolver@gmail.com
+          </p>
         </div>
-
-        <!-- Mailto: Not Working -->
-        <!-- <form
-          action="mailto:kerr.digitalsolver@gmail.com"
-          method="GET"
-          id="myForm"
-        >
-          <div class="form-item">
-            <label for="name"
-              >Name<span class="form__label--required">*</span></label
-            >
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="John Smith"
-              required
-            />
-          </div>
-          <div class="form-item">
-            <label for="question"
-              >Your Question<span class="form__label--required">*</span></label
-            >
-            <textarea
-              id="question"
-              name="question"
-              placeholder="e.g. Are you available for hire?"
-              required
-              maxlength="240"
-            ></textarea>
-          </div>
-          <div class="form-item">
-            <label for="email"
-              >Your Email<span class="form__label--required">*</span></label
-            >
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="example@abc.com"
-              required
-            />
-          </div>
-          <input
-            type="hidden"
-            id="encryptedEmail"
-            value="Ea2Vyci5kaWdpdGFsc29sdmVyQGdtYWlsLmNvbQ=="
-          />
-          <div class="form-item">
-            <button type="submit">Submit</button>
-          </div>
-        </form> -->
-
-        <!-- AWS SES Method - Not Working -->
-        <!-- <form action="https://2q9hujjguc.execute-api.eu-west-3.amazonaws.com/dev/contact" method="POST" id="myForm">
-            <div class="form-item">
-              <label for="name">Name<span class="form__label--required">*</span></label>
-              <input type="text" id="name" name="name" placeholder="John Smith" required />
-            </div>
-            <div class="form-item">
-              <label for="question">Your Question<span class="form__label--required">*</span></label>
-              <textarea id="question" name="message" placeholder="e.g. Are you available for hire?" required maxlength="240"></textarea>
-            </div>
-            <div class="form-item">
-              <label for="email">Your Email<span class="form__label--required">*</span></label>
-              <input type="email" id="email" name="email" placeholder="example@abc.com" required />
-            </div>
-            <div class="form-item">
-              <button type="submit">Submit</button>
-            </div>
-          </form> -->
       </section>
     </main>
 
@@ -206,64 +138,6 @@
     </footer>
 
     <!-- SCRIPTS -->
-    <!-- <script src="js/tota11y.min.js"></script> -->
     <script src="js/menu-animation.js"></script>
-
-    <!-- AWS SES Not Working -->
-    <!-- <script src="https://sdk.amazonaws.com/js/aws-sdk-2.766.0.min.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/crypto-js@4.0.0/crypto-js.min.js"></script>
-    <script>
-      AWS.config.update({
-        accessKeyId: "AKIA2PDMH567CCDSHWKJ",
-        secretAccessKey: "OYaFK8LOMAUB6n3iUOExUTX4Hz/HpAnE5V2lH0VF",
-      });
-    </script>
-    <script>
-      function sendEmail() {
-        // Set the region where your Amazon SES resources are located
-        AWS.config.region = "eu-west-3";
-
-        // Create a new SES object
-        var ses = new AWS.SES();
-
-        // Set the email parameters
-        var params = {
-          Destination: {
-            ToAddresses: ["recipient@example.com"],
-          },
-          Message: {
-            Body: {
-              Text: {
-                Data:
-                  "Name: " +
-                  document.getElementById("name").value +
-                  "\n" +
-                  "Email: " +
-                  document.getElementById("email").value +
-                  "\n" +
-                  "Message: " +
-                  document.getElementById("message").value,
-              },
-            },
-            Subject: {
-              Data: "Contact Form Submission",
-            },
-          },
-          Source: document.getElementById("email").value,
-        };
-
-        // Send the email
-        ses.sendEmail(params, function (err, data) {
-          if (err) {
-            console.log(err, err.stack);
-            alert("Error: Email was not sent.");
-          } else {
-            console.log(data);
-            alert("Email sent successfully.");
-          }
-        });
-      }
-    </script> -->
   </body>
 </html>
