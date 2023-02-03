@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "aws-sdk": "^2.1288.0"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.21"
   }
 }

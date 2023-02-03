@@ -56,8 +56,10 @@ h4 {
 h5 {
   font-size: 1.6rem;
   font-style: italic;
-  margin-block-start: 1rem;
-  margin-block-end: 2.4rem;
+  -webkit-margin-before: 1rem;
+          margin-block-start: 1rem;
+  -webkit-margin-after: 2.4rem;
+          margin-block-end: 2.4rem;
 }
 
 p,
@@ -68,7 +70,8 @@ li {
 
 p,
 ul {
-  margin-block-end: 6.4rem;
+  -webkit-margin-after: 6.4rem;
+          margin-block-end: 6.4rem;
 }
 
 a {
@@ -153,7 +156,8 @@ a:hover {
 }
 
 .header__nav li {
-  margin-inline-start: 4vw;
+  -webkit-margin-start: 4vw;
+          margin-inline-start: 4vw;
 }
 
 .header__nav a {
@@ -208,6 +212,8 @@ a:hover {
 
 .hero__picture {
   width: 40%;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
   min-width: fit-content;
   display: flex;
   background-color: rgba(92, 39, 124, 0.6);
@@ -308,7 +314,8 @@ a:hover {
 .project-card {
   width: 54rem;
   margin-inline: 2.4rem;
-  margin-block-end: 6.4rem;
+  -webkit-margin-after: 6.4rem;
+          margin-block-end: 6.4rem;
 }
 
 .project-card__hero {
@@ -318,7 +325,8 @@ a:hover {
 .project-card__hero img {
   height: 25.6rem;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .project-card__title-container {
@@ -441,7 +449,8 @@ a:hover {
 
 .connect p {
   width: 70vw;
-  margin-inline-end: 6.4rem;
+  -webkit-margin-end: 6.4rem;
+          margin-inline-end: 6.4rem;
 }
 
 .connect__form {
@@ -556,7 +565,8 @@ a:hover {
 
 .case-study__banner img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .case-study__banner-text {
