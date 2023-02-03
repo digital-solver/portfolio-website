@@ -88,6 +88,11 @@ a:hover {
   border-radius: 2.5rem;
 }
 
+.cta:hover {
+  color: #fff;
+  background-color: var(--z-purple-90);
+}
+
 @media only screen and (max-width: 767px) {
   body {
     margin: 0 auto;
@@ -376,7 +381,6 @@ a:hover {
 }
 
 @media only screen and (max-width: 1439px) {
-
   .project-card {
     margin: 2.4rem;
   }
@@ -396,9 +400,11 @@ a:hover {
 
 .cv__title-container {
   display: flex;
+  width: 82%;
+  margin-inline: auto;
+  padding: 1rem;
   justify-content: flex-start;
   align-items: center;
-  justify-items: center;
   margin-bottom: 2rem;
 }
 
@@ -408,7 +414,18 @@ a:hover {
 
 .cv__content {
   margin-inline: auto;
-  width: 70vw;
+  width: 70%;
+}
+
+@media screen and (max-width: 599px) {
+  .cv__title-container {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .cv__content {
+    width: 90%;
+  }
 }
 
 /* CONNECT */
@@ -528,5 +545,75 @@ a:hover {
 @media only screen and (max-width: 767px) {
   .footer {
     margin-top: 6.4rem;
+  }
+}
+
+/* CASE STUDIES */
+.case-study__banner {
+  text-align: center;
+  margin-top: 12.8rem;
+}
+
+.case-study__banner img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.case-study__banner-text {
+  position: relative;
+  left: 50%;
+  margin-top: -5rem;
+  transform: translate(-50%, -13rem);
+}
+
+.case-study__banner-text h2,
+.case-study__banner-text h3 {
+  color: #fff;
+}
+
+.about__title-container--case-study {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 2rem;
+}
+
+.about__title-container--case-study h2 {
+  margin-right: 2.4rem;
+}
+
+.case-study__text-container {
+  margin-block: 64px;
+  margin-inline: auto;
+  width: 70vw;
+  max-width: 1440px;
+}
+
+@media screen and (max-width: 999px) {
+  .case-study__banner-text {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -8rem);
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .about__title-container--case-study {
+    flex-direction: column;
+  }
+
+  .about__title-container--case-study h2 {
+    margin-inline: 0;
+  }
+
+  .case-study__banner-text {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -3.5rem);
+  }
+
+  .case-study__text-container {
+    width: 80vw;
   }
 }
