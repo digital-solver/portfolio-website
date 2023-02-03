@@ -21,8 +21,11 @@ body {
 h1,
 h2,
 h3,
+h4,
+h5,
 p,
-a {
+a,
+li {
   font-weight: 400;
   letter-spacing: 0.02em;
   line-height: 1.5;
@@ -44,9 +47,45 @@ h3 {
   color: var(--z-purple);
 }
 
-p,
-a {
+h4 {
+  font-size: 1.8rem;
+  color: #5b5b5b;
+  margin-block: 1rem;
+}
+
+h5 {
   font-size: 1.6rem;
+  font-style: italic;
+  margin-block-start: 1rem;
+  margin-block-end: 2.4rem;
+}
+
+p,
+a,
+li {
+  font-size: 1.6rem;
+}
+
+p,
+ul {
+  margin-block-end: 6.4rem;
+}
+
+a {
+  color: #333;
+}
+
+a:hover {
+  color: var(--z-purple-90);
+}
+
+.cta {
+  text-decoration: none;
+  background-color: var(--z-purple);
+  color: white;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 2.5rem;
 }
 
 @media only screen and (max-width: 767px) {
@@ -56,23 +95,28 @@ a {
   }
 
   h1 {
-    font-weight: bold;
     font-size: 2rem;
   }
 
   h2 {
-    font-weight: bold;
     font-size: 1.8rem;
   }
 
   h3 {
-    font-weight: bold;
     font-size: 1.6rem;
-    color: var(--z-purple);
+  }
+
+  h4 {
+    font-size: 1.6rem;
+  }
+
+  h5 {
+    font-size: 1.4rem;
   }
 
   p,
-  a {
+  a,
+  li {
     font-size: 1.4rem;
   }
 }
@@ -93,12 +137,14 @@ a {
 }
 
 .header__nav {
+  margin-block: auto;
   display: flex;
 }
 
 .header__nav ul {
   display: flex;
   list-style: none;
+  margin: 1rem;
 }
 
 .header__nav li {
@@ -111,16 +157,6 @@ a {
   font-size: 1.6rem;
 }
 
-.header__nav .cta,
-.cta {
-  text-decoration: none;
-  background-color: var(--z-purple);
-  color: white;
-  font-weight: bold;
-  padding: 1rem 2rem;
-  border-radius: 2.5rem;
-}
-
 @media only screen and (max-width: 767px) {
   .header__nav li {
     display: none;
@@ -129,6 +165,10 @@ a {
   .header__nav li:last-child {
     display: flex;
   }
+}
+
+.header__nav .cta {
+  color: white;
 }
 
 /* HERO */
@@ -245,7 +285,7 @@ a {
 }
 
 /* PROJECTS */
-/* PROJECTS */
+
 .projects {
   margin-bottom: 12.8rem;
 }
@@ -256,14 +296,14 @@ a {
 
 .project-cards {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .project-card {
-  width: 100%;
-  margin: 2.4rem;
-  overflow: hidden;
+  width: 54rem;
+  margin-inline: 2.4rem;
+  margin-block-end: 6.4rem;
 }
 
 .project-card__hero {
@@ -271,6 +311,7 @@ a {
 }
 
 .project-card__hero img {
+  height: 25.6rem;
   width: 100%;
   object-fit: cover;
 }
@@ -296,19 +337,23 @@ a {
   box-shadow: inset -5px 5px 25px rgba(0, 0, 0, 0.25);
 }
 
+.project-card__info p {
+  margin: 1.6rem 0;
+}
+
 .project-card__separator {
   display: block;
   height: 0.1rem;
   width: 22rem;
   background: #000;
-  margin: 2rem 0;
+  margin: 1.6rem 0;
 }
 
 .project-card__tags {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-block: 2.4rem;
+  margin-block: 1.6rem;
 }
 
 .project-card__tag {
@@ -316,7 +361,7 @@ a {
   color: white;
   padding: 0.8rem 1.6rem;
   border-radius: 1.6rem;
-  margin: 1rem 1.6rem;
+  margin: 1rem 0.8rem;
   font-size: 1.6rem;
 }
 
@@ -328,23 +373,42 @@ a {
 
 .project-card__link {
   margin: 1.5rem;
-  color: #333;
 }
 
-.project-card__link:hover {
-  color: var(--z-purple-90);
-}
-
-@media only screen and (min-width: 720px) {
-  .project-cards {
-    display: grid;
-    column-gap: 2.4rem;
-    justify-content: center;
-  }
+@media only screen and (max-width: 1439px) {
 
   .project-card {
-    width: 56rem;
+    margin: 2.4rem;
   }
+}
+
+@media screen and (max-width: 599px) {
+  .project-card {
+    max-width: 90vw;
+  }
+
+  .project-card__info {
+    padding: 1rem 2.4rem;
+  }
+}
+
+/* CV */
+
+.cv__title-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 2rem;
+}
+
+.cv__title-container h2 {
+  margin-right: 2.4rem;
+}
+
+.cv__content {
+  margin-inline: auto;
+  width: 70vw;
 }
 
 /* CONNECT */
@@ -354,11 +418,12 @@ a {
 
 .connect-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 .connect p {
-  width: 45vw;
+  width: 70vw;
   margin-inline-end: 6.4rem;
 }
 
@@ -453,12 +518,6 @@ a {
 
 .socials-link {
   margin: 0 1rem;
-  text-decoration: none;
-  color: black;
-}
-
-.socials-link:hover {
-  color: var(--z-purple);
 }
 
 .footer p {
